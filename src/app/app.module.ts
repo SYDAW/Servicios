@@ -10,6 +10,7 @@ import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
 import { ProyectoServicioService } from './servicio/proyecto-servicio.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,10 @@ import { ProyectoServicioService } from './servicio/proyecto-servicio.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [AlertService, ProyectoServicioService],
+  providers: [AlertService, ProyectoServicioService, HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
