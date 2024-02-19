@@ -1,4 +1,8 @@
 <p>home works!</p>
 <div class="mx-2">
-    {{this.proyecto.nombre}} - {{this.proyecto.presupuesto}}
+    <ol>
+        <li *ngFor="let p of this.arrayProyecto">
+            {{p.nombre}} - {{p.presupuesto}}€
+        </li>
+    </ol>
 </div>

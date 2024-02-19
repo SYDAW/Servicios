@@ -17,6 +17,7 @@ export class ProyectosComponent {
   public listaProyecto: Proyecto[] = new Array<Proyecto>();
   
   constructor(private ruta: Router, private alerta: AlertService, private proyectoService: ProyectoServicioService){
+    console.log("Entro en constructor de Proyectos");
 
   }
 
